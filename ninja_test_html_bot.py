@@ -2499,7 +2499,7 @@ async def handle_html_file(update: Update, context: ContextTypes.DEFAULT_TYPE):
         function submitTest() {{
             if (submitted) return; // Prevent double submission
 
-            if (!confirm('Are you sure you want to submit the test? You cannot change your answers after submission.')) return;
+            
             
             submitted = true;
             testStarted = false;
@@ -2687,4 +2687,5 @@ def main():
     application.run_polling()
 
 if __name__ == "__main__":
+
     main()
